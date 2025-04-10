@@ -1,0 +1,25 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient Definitions -->
+  <defs>
+    <linearGradient id="mainGradient" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0FF0FC"/>
+      <stop offset="100%" stop-color="#00FFA3"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  
+  <!-- Hexagonal Base with Gradient -->
+  <path d="M16 2L28.785 9V23L16 30L3.215 23V9L16 2Z" 
+        fill="url(#mainGradient)" 
+        filter="url(#glow)"/>
+  
+  <!-- Subtle H using negative space -->
+  <path d="M11 10V22M21 10V22M11 16H21" 
+        stroke="#F3F9FF" 
+        stroke-width="2" 
+        stroke-opacity="0.8" 
+        stroke-linecap="round"/>
+</svg>
